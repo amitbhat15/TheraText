@@ -117,69 +117,63 @@
         "entities": []
       },
       {
-        "text": "i'm looking for a place to eat",
-        "intent": "restaurant_search",
+        "text": "i'm sad",
+        "intent": "negative",
         "entities": []
       },
       {
-        "text": "I want to grab lunch",
-        "intent": "restaurant_search",
+        "text": "i'm doing well",
+        "intent": "positive",
         "entities": []
       },
       {
-        "text": "I am searching for a dinner spot",
-        "intent": "restaurant_search",
+        "text": "I could be better",
+        "intent": "negative",
         "entities": []
       },
       {
-        "text": "i'm looking for a place in the north of town",
-        "intent": "restaurant_search",
+        "text": "i'm very stressed",
+        "intent": "negative",
         "entities": [
           {
-            "start": 31,
-            "end": 36,
-            "value": "north",
-            "entity": "location"
+            "start": 9,
+            "end": 16,
+            "value": "negative",
+            //"entity": "location"
           }
         ]
       },
       {
-        "text": "show me chinese restaurants",
-        "intent": "restaurant_search",
+        "text": "I feel really lonely",
+        "intent": "negative",
         "entities": [
           {
-            "start": 8,
-            "end": 15,
-            "value": "chinese",
-            "entity": "cuisine"
+            "start": 14,
+            "end": 19,
+            "value": "lonely",
+            //"entity": "cuisine"
           }
         ]
       },
       {
-        "text": "show me chines restaurants in the north",
-        "intent": "restaurant_search",
+        "text": "I’m never going to be able to get an A in 61A",
+        "intent": "negative",
         "entities": [
           {
-            "start": 8,
+            "start": 4,
+            "end": 8,
+            "value": "never",
+            "entity": "negative"
+          }
+        ]
+      },
+      {
+        "text": "Why do I always fail",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 9,
             "end": 14,
-            "value": "chinese",
-            "entity": "cuisine"
-          },
-          {
-            "start": 34,
-            "end": 39,
-            "value": "north",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "show me a mexican place in the centre",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 31,
-            "end": 37,
             "value": "centre",
             "entity": "location"
           },
