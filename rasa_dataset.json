@@ -12,110 +12,31 @@
     ],
     "entity_synonyms": [
       {
-        "value": "chinese",
-        "synonyms": ["Chinese", "Chines", "chines"]
+        "value": "sad",
+        "synonyms": ["sed", "sadd", "unhappy", "depressed"]
       },
       {
-        "value": "vegetarian",
-        "synonyms": ["veggie", "vegg"]
+        "value": "stress",
+        "synonyms": ["stressed", "anxious", "worried"]
+      },
+      {
+        "value": "help",
+        "synonyms": ["support", "aid"]
+      },
+      {
+        "value": "alone",
+        "synonyms": ["lonely", "No one", "myself"]
+      },
+      {
+        "value": "better",
+        "synonyms": ["improving", "improve", "good", "great"]
+      },
+      {
+        "value": "scared",
+        "synonyms": ["fear", "afraid", "insecure", "worried"]
       }
     ],
     "common_examples": [
-      {
-        "text": "",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "howdy",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hey there",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hello",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hi",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "good morning",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "good evening",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "dear sir",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "yes",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "yep",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "yeah",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "indeed",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "that's right",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "ok",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "great",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "right, thank you",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "correct",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "great choice",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "sounds really good",
-        "intent": "affirm",
-        "entities": []
-      },
       {
         "text": "i'm sad",
         "intent": "negative",
@@ -138,7 +59,7 @@
           {
             "start": 9,
             "end": 16,
-            "value": "negative",
+            "value": "stressed",
             //"entity": "location"
           }
         ]
@@ -174,149 +95,159 @@
           {
             "start": 9,
             "end": 14,
-            "value": "centre",
-            "entity": "location"
+            "value": "always",
+            //"entity": "location"
           },
-          {
-            "start": 10,
-            "end": 17,
-            "value": "mexican",
-            "entity": "cuisine"
-          }
-        ]
-      },
-      {
-        "text": "i am looking for an indian spot called olaolaolaolaolaola",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 20,
-            "end": 26,
-            "value": "indian",
-            "entity": "cuisine"
-          }
-        ]
-      },     {
-        "text": "search for restaurants",
-        "intent": "restaurant_search",
-        "entities": []
-      },
-      {
-        "text": "anywhere in the west",
-        "intent": "restaurant_search",
-        "entities": [
           {
             "start": 16,
-            "end": 20,
-            "value": "west",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "anywhere near 18328",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 14,
             "end": 19,
-            "value": "18328",
-            "entity": "location"
+            "value": "fail",
+            //"entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I am looking for asian fusion food",
-        "intent": "restaurant_search",
+        "text": "i'm feeling much better'",
+        "intent": "positive",
         "entities": [
           {
             "start": 17,
-            "end": 29,
-            "value": "asian fusion",
-            "entity": "cuisine"
+            "end": 22,
+            "value": "better",
+            //"entity": "cuisine"
+          }
+        ]
+      },     
+      {
+        "text": "I want to cry",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "cry",
+            //"entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I am looking a restaurant in 29432",
+        "text": "This always happens to me it's not fair",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 29,
-            "end": 34,
-            "value": "29432",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "I am looking for mexican indian fusion",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 17,
-            "end": 38,
-            "value": "mexican indian fusion",
-            "entity": "cuisine"
-          }
-        ]
-      },
-      {
-        "text": "central indian restaurant",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "central",
-            "entity": "location"
+            "start": 5,
+            "end": 10,
+            "value": "always",
+            //"entity": "location"
           },
           {
-            "start": 8,
-            "end": 14,
-            "value": "indian",
-            "entity": "cuisine"
+            "start": 31,
+            "end": 38,
+            "value": "not fair",
+            //"entity": "location"
           }
         ]
       },
       {
-        "text": "bye",
-        "intent": "goodbye",
+        "text": "I don't feel like going to class these days",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 2,
+            "end": 11,
+            "value": "don't feel"
+            //"entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I need to be better",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 2,
+            "end": 11,
+            "value": "need to be",
+            //"entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "What's the point",
+        "intent": "negative",
         "entities": []
       },
       {
-        "text": "goodbye",
-        "intent": "goodbye",
+        "text": "every day is really hard",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 19,
+            "end": 22,
+            "value": "hard",
+            //"entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I'm worried about the 61A midterm",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "worried",
+            //"entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Could I speak to someone",
+        "intent": "positive",
         "entities": []
       },
       {
-        "text": "good bye",
-        "intent": "goodbye",
+        "text": "When could I book my next appointment",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "could",
+            //"entity": "location"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "value": "next",
+            //"entity": "location"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "appointment",
+            //"entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "make it stop",
+        "intent": "negative",
         "entities": []
       },
       {
-        "text": "stop",
-        "intent": "goodbye",
+        "text": "I just want it to end",
+        "intent": "negative",
         "entities": []
       },
       {
-        "text": "end",
-        "intent": "goodbye",
+        "text": "thank you",
+        "intent": "positive",
         "entities": []
       },
       {
-        "text": "farewell",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "Bye bye",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "have a good one",
-        "intent": "goodbye",
+        "text": "this helped",
+        "intent": "positive",
         "entities": []
       }
     ]
