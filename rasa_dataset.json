@@ -43,6 +43,26 @@
         "entities": []
       },
       {
+        "text": "accomplish",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "energetic",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "joy",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "i feel amazing",
+        "intent": "positive",
+        "entities": []
+      },
+      {
         "text": "i'm doing well",
         "intent": "positive",
         "entities": []
@@ -55,6 +75,45 @@
       {
         "text": "today was a good day",
         "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "I had a lot of fun",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 15,
+            "end": 17,
+            "value": "never",
+            "entity": "negative"
+          }  
+        ]
+      },
+      {
+        "text": "today was a horrible day",
+        "intent": "negative",
+        "entities": [
+          {       
+            "start": 12,
+            "end": 19,
+            "value": "horrible",
+            "entity": "negative"
+          } 
+        ]
+      },
+      {
+        "text": "i need help",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "I hate myself",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "No one loves me",
+        "intent": "negative",
         "entities": []
       },
       {
@@ -77,6 +136,86 @@
             "start": 14,
             "end": 19,
             "value": "lonely",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I am happy to kill myself",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "kill",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I went for lunch with my friends",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "friends",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "my happiness has improved",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "happiness",
+            "entity": "cuisine"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "improved",
+            "entity": "cuisine"
+          },
+        ]
+      },
+      {
+        "text": "Everyone has been really helpful and nice",
+        "intent": "positive",
+        "entities": [
+          {
+          "start": 37,
+          "end": 40,
+          "value": "nice",
+          "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "My friends have been really supportive",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 28,
+            "end": 37,
+            "value": "supportive",
+            "entity": "cuisine"
+            }
+        ]
+  
+      },
+
+      {
+        "text": "No one is ever here for me",
+        "intent": "negative",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "No one",
             "entity": "cuisine"
           }
         ]
@@ -113,6 +252,18 @@
             "start": 17,
             "end": 22,
             "value": "better",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "i'm confident in myself'",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "confident",
             "entity": "cuisine"
           }
         ]
@@ -190,13 +341,25 @@
         ]
       },
       {
+        "text": "everyone is confident in me",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "confident",
+            "entity": "location"
+          }
+        ]
+      },
+      {
         "text": "I need to be better",
         "intent": "negative",
         "entities": [
           {
             "start": 2,
-            "end": 11,
-            "value": "need to be",
+            "end": 18,
+            "value": "need to be better",
             "entity": "cuisine"
           }
         ]
@@ -204,6 +367,11 @@
       {
         "text": "What's the point",
         "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "life is great",
+        "intent": "positive",
         "entities": []
       },
       {
@@ -231,38 +399,45 @@
         ]
       },
       {
-        "text": "Could I speak to someone",
-        "intent": "positive",
-        "entities": []
-      },
-      {
-        "text": "When could I book my next appointment",
+        "text": "I'm confident i can do well on the 61A midterm",
         "intent": "positive",
         "entities": [
           {
-            "start": 5,
-            "end": 10,
-            "value": "could",
+            "start": 4,
+            "end": 12,
+            "value": "confident",
             "entity": "location"
           },
           {
-            "start": 21,
-            "end": 24,
-            "value": "next",
-            "entity": "location"
-          },
-          {
-            "start": 26,
-            "end": 36,
-            "value": "appointment",
+            "start": 23,
+            "end": 26,
+            "value": "well",
             "entity": "location"
           }
         ]
       },
       {
-        "text": "make it stop",
+        "text": "Could I speak to someone",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "I really need to speak to someone",
         "intent": "negative",
         "entities": []
+      },
+
+      {
+        "text": "When could I book my next appointment",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 21,
+            "end": 36,
+            "value": "next appointment",
+            "entity": "location"
+          }
+        ]
       },
       {
         "text": "I just want it to end",
@@ -270,12 +445,12 @@
         "entities": []
       },
       {
-        "text": "thank you",
+        "text": "thank you so much",
         "intent": "positive",
         "entities": []
       },
       {
-        "text": "this helped",
+        "text": "this really helped",
         "intent": "positive",
         "entities": []
       }
