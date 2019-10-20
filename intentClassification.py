@@ -9,4 +9,4 @@ trainer = Trainer(config.load("config_spacy.yaml"))
 #Training Data
 trainer.train(train_data)
 
-model_directory = trainer.persist("/Users/advaitmarathe/Documents/ML")
+model_directory = trainer.persist("/Users/advaitmarathe/Documents/GitHub/TheraText")

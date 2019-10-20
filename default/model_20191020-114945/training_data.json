@@ -1,0 +1,440 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "i'm sad",
+        "intent": "negative"
+      },
+      {
+        "text": "accomplish",
+        "intent": "positive"
+      },
+      {
+        "text": "energetic",
+        "intent": "positive"
+      },
+      {
+        "text": "joy",
+        "intent": "positive"
+      },
+      {
+        "text": "i feel amazing",
+        "intent": "positive"
+      },
+      {
+        "text": "i'm doing well",
+        "intent": "positive"
+      },
+      {
+        "text": "i am happy",
+        "intent": "positive"
+      },
+      {
+        "text": "today was a good day",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "negative",
+            "start": 15,
+            "value": "never",
+            "end": 17
+          }
+        ],
+        "text": "I had a lot of fun",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "negative",
+            "start": 12,
+            "value": "horrible",
+            "end": 19
+          }
+        ],
+        "text": "today was a horrible day",
+        "intent": "negative"
+      },
+      {
+        "text": "i need help",
+        "intent": "negative"
+      },
+      {
+        "text": "I hate myself",
+        "intent": "negative"
+      },
+      {
+        "text": "No one loves me",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 9,
+            "value": "stressed",
+            "end": 16
+          }
+        ],
+        "text": "i'm very stressed",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 14,
+            "value": "lonely",
+            "end": 19
+          }
+        ],
+        "text": "I feel really lonely",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 14,
+            "value": "kill",
+            "end": 19
+          }
+        ],
+        "text": "I am happy to kill myself",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 25,
+            "value": "friends",
+            "end": 31
+          }
+        ],
+        "text": "I went for lunch with my friends",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 3,
+            "value": "happiness",
+            "end": 11
+          },
+          {
+            "entity": "cuisine",
+            "start": 16,
+            "value": "improved",
+            "end": 24
+          }
+        ],
+        "text": "my happiness has improved",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 37,
+            "value": "nice",
+            "end": 40
+          }
+        ],
+        "text": "Everyone has been really helpful and nice",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 28,
+            "value": "supportive",
+            "end": 37
+          }
+        ],
+        "text": "My friends have been really supportive",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 0,
+            "value": "No one",
+            "end": 5
+          }
+        ],
+        "text": "No one is ever here for me",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "negative",
+            "start": 4,
+            "value": "never",
+            "end": 8
+          }
+        ],
+        "text": "I’m never going to be able to get an A in 61A",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 16,
+            "value": "fail",
+            "end": 19
+          }
+        ],
+        "text": "Why do I always fail",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 17,
+            "value": "better",
+            "end": 22
+          }
+        ],
+        "text": "i'm feeling much better'",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 16,
+            "value": "proud",
+            "end": 30
+          },
+          {
+            "entity": "cuisine",
+            "start": 4,
+            "value": "accomplishments",
+            "end": 8
+          }
+        ],
+        "text": "i'm proud of my accomplishments'",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 10,
+            "value": "cry",
+            "end": 12
+          }
+        ],
+        "text": "I want to cry",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 5,
+            "value": "always",
+            "end": 10
+          },
+          {
+            "entity": "location",
+            "start": 31,
+            "value": "not fair",
+            "end": 38
+          }
+        ],
+        "text": "This always happens to me it's not fair",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 2,
+            "value": "don't feel",
+            "end": 11
+          }
+        ],
+        "text": "I don't feel like going to class these days",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 11,
+            "value": "confident",
+            "end": 20
+          }
+        ],
+        "text": "everyone is confident in me",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 2,
+            "value": "need to be better",
+            "end": 18
+          }
+        ],
+        "text": "I need to be better",
+        "intent": "negative"
+      },
+      {
+        "text": "What's the point",
+        "intent": "negative"
+      },
+      {
+        "text": "life is great",
+        "intent": "positive"
+      },
+      {
+        "entities": [
+          {
+            "entity": "cuisine",
+            "start": 19,
+            "value": "hard",
+            "end": 22
+          }
+        ],
+        "text": "every day is really hard",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 4,
+            "value": "worried",
+            "end": 10
+          }
+        ],
+        "text": "I'm worried about the 61A midterm",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 4,
+            "value": "confident",
+            "end": 12
+          },
+          {
+            "entity": "location",
+            "start": 23,
+            "value": "well",
+            "end": 26
+          }
+        ],
+        "text": "I'm confident i can do well on the 61A midterm",
+        "intent": "positive"
+      },
+      {
+        "text": "Could I speak to someone",
+        "intent": "positive"
+      },
+      {
+        "text": "I really need to speak to someone",
+        "intent": "negative"
+      },
+      {
+        "entities": [
+          {
+            "entity": "location",
+            "start": 21,
+            "value": "next appointment",
+            "end": 36
+          }
+        ],
+        "text": "When could I book my next appointment",
+        "intent": "positive"
+      },
+      {
+        "text": "I just want it to end",
+        "intent": "negative"
+      },
+      {
+        "text": "thank you so much",
+        "intent": "positive"
+      },
+      {
+        "text": "this really helped",
+        "intent": "positive"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "synonyms": [
+          "aid",
+          "support"
+        ],
+        "value": "help"
+      },
+      {
+        "synonyms": [
+          "stressed",
+          "anxious"
+        ],
+        "value": "stress"
+      },
+      {
+        "synonyms": [
+          "fear",
+          "insecure",
+          "afraid",
+          "worried"
+        ],
+        "value": "scared"
+      },
+      {
+        "synonyms": [
+          "lonely",
+          "myself",
+          "No one"
+        ],
+        "value": "alone"
+      },
+      {
+        "synonyms": [
+          "improving",
+          "improve",
+          "great",
+          "good"
+        ],
+        "value": "better"
+      },
+      {
+        "synonyms": [
+          "depressed",
+          "sadd",
+          "sed",
+          "unhappy"
+        ],
+        "value": "sad"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ]
+  }
+}

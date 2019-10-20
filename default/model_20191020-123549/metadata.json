@@ -1,0 +1,87 @@
+{
+    "pipeline": [
+        {
+            "case_sensitive": false,
+            "class": "rasa_nlu.utils.spacy_utils.SpacyNLP",
+            "model": "en",
+            "name": "SpacyNLP"
+        },
+        {
+            "class": "rasa_nlu.tokenizers.spacy_tokenizer.SpacyTokenizer",
+            "name": "SpacyTokenizer"
+        },
+        {
+            "file": "component_2_RegexFeaturizer.pkl",
+            "class": "rasa_nlu.featurizers.regex_featurizer.RegexFeaturizer",
+            "name": "RegexFeaturizer"
+        },
+        {
+            "class": "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer",
+            "name": "SpacyFeaturizer"
+        },
+        {
+            "L2_c": 0.1,
+            "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
+            "name": "CRFEntityExtractor",
+            "file": "component_4_CRFEntityExtractor.pkl",
+            "L1_c": 0.1,
+            "BILOU_flag": true,
+            "max_iterations": 50,
+            "features": [
+                [
+                    "low",
+                    "title",
+                    "upper"
+                ],
+                [
+                    "bias",
+                    "low",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2",
+                    "upper",
+                    "title",
+                    "digit",
+                    "pattern"
+                ],
+                [
+                    "low",
+                    "title",
+                    "upper"
+                ]
+            ]
+        },
+        {
+            "file": "component_5_EntitySynonymMapper.json",
+            "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper",
+            "name": "EntitySynonymMapper"
+        },
+        {
+            "max_cross_validation_folds": 5,
+            "C": [
+                1,
+                2,
+                5,
+                10,
+                20,
+                100
+            ],
+            "file": "component_6_SklearnIntentClassifier.pkl",
+            "kernels": [
+                "linear"
+            ],
+            "gamma": [
+                0.1
+            ],
+            "scoring_function": "f1_weighted",
+            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier",
+            "name": "SklearnIntentClassifier"
+        }
+    ],
+    "trained_at": "20191020-123549",
+    "language": "en",
+    "training_data": "training_data.json",
+    "rasa_nlu_version": "0.15.1"
+}

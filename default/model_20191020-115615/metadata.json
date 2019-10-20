@@ -1,12 +1,11 @@
 {
     "training_data": "training_data.json",
-    "rasa_nlu_version": "0.15.1",
     "pipeline": [
         {
-            "case_sensitive": false,
             "name": "SpacyNLP",
             "model": "en",
-            "class": "rasa_nlu.utils.spacy_utils.SpacyNLP"
+            "class": "rasa_nlu.utils.spacy_utils.SpacyNLP",
+            "case_sensitive": false
         },
         {
             "name": "SpacyTokenizer",
@@ -22,11 +21,10 @@
             "class": "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer"
         },
         {
+            "name": "CRFEntityExtractor",
             "L2_c": 0.1,
             "max_iterations": 50,
-            "BILOU_flag": true,
             "file": "component_4_CRFEntityExtractor.pkl",
-            "name": "CRFEntityExtractor",
             "features": [
                 [
                     "low",
@@ -53,6 +51,7 @@
                 ]
             ],
             "L1_c": 0.1,
+            "BILOU_flag": true,
             "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor"
         },
         {
@@ -61,13 +60,6 @@
             "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
         },
         {
-            "max_cross_validation_folds": 5,
-            "file": "component_6_SklearnIntentClassifier.pkl",
-            "scoring_function": "f1_weighted",
-            "kernels": [
-                "linear"
-            ],
-            "name": "SklearnIntentClassifier",
             "C": [
                 1,
                 2,
@@ -76,12 +68,20 @@
                 20,
                 100
             ],
+            "file": "component_6_SklearnIntentClassifier.pkl",
+            "max_cross_validation_folds": 5,
+            "scoring_function": "f1_weighted",
             "gamma": [
                 0.1
+            ],
+            "name": "SklearnIntentClassifier",
+            "kernels": [
+                "linear"
             ],
             "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
         }
     ],
+    "trained_at": "20191020-115615",
     "language": "en",
-    "trained_at": "20191020-011828"
+    "rasa_nlu_version": "0.15.1"
 }
