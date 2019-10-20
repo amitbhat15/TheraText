@@ -48,8 +48,13 @@
         "entities": []
       },
       {
-        "text": "I could be better",
-        "intent": "negative",
+        "text": "i am happy",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "today was a good day",
+        "intent": "positive",
         "entities": []
       },
       {
@@ -84,7 +89,7 @@
             "start": 4,
             "end": 8,
             "value": "never",
-            "entity": "negative"
+            //"entity": "negative"
           }
         ]
       },
@@ -92,12 +97,6 @@
         "text": "Why do I always fail",
         "intent": "negative",
         "entities": [
-          {
-            "start": 9,
-            "end": 14,
-            "value": "always",
-            //"entity": "location"
-          },
           {
             "start": 16,
             "end": 19,
@@ -117,7 +116,25 @@
             //"entity": "cuisine"
           }
         ]
-      },     
+      },
+      {
+        "text": "i'm proud of my accomplishments'",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 16,
+            "end": 30,
+            "value": "proud",
+            //"entity": "cuisine"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "accomplishments",
+            //"entity": "cuisine"
+          }
+        ]
+      },
       {
         "text": "I want to cry",
         "intent": "negative",
@@ -132,7 +149,7 @@
       },
       {
         "text": "This always happens to me it's not fair",
-        "intent": "restaurant_search",
+        "intent": "negative",
         "entities": [
           {
             "start": 5,
@@ -156,6 +173,18 @@
             "start": 2,
             "end": 11,
             "value": "don't feel"
+            //"entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I feel so motivated",
+        "intent": "positive",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "motivated"
             //"entity": "location"
           }
         ]
